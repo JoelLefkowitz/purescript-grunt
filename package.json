@@ -1,0 +1,34 @@
+{
+    "name": "purescript-grunt",
+    "description": "Purescript FFI bindings for Grunt",
+    "version": "0.1.0",
+    "license": "MIT",
+    "author": "Joel Lefkowitz",
+    "homepage": "https://github.com/JoelLefkowitz/purescript-grunt#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JoelLefkowitz/purescript-grunt.git"
+    },
+    "bugs": {
+        "url": "https://github.com/JoelLefkowitz/purescript-grunt/issues"
+    },
+    "devDependencies": {
+        "eslint": "^7.17.0",
+        "prettier": "^2.1.2"
+    },
+    "portfolio": {
+        "project_type": "Published on pursuit",
+        "languages": [
+            "Purescript"
+        ],
+        "frameworks": [
+            "Grunt"
+        ],
+        "paradigms": [
+            "Functional programming"
+        ],
+        "status": [
+            "In development"
+        ]
+    }
+}
