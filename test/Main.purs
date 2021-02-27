@@ -2,10 +2,16 @@ module Test.Main where
 
 import Prelude
 
-import Effect (Effect)
-import Effect.Class.Console (log)
+import Test.Unit (suite, test, timeout)
+import Test.Unit.Main (runTest)
+import Test.Unit.Assert as Assert
 
-main :: Effect Unit
-main = do
-  log "🍝"
-  log "You should add some tests."
+import Node.FS.Aff as FS
+import Node.Encoding (Encoding(..))
+
+main = runTest do
+  suite "Gruntfile" do
+    test "Read Gruntfile" do
+      timeout 100 $ do
+        file2Contents <- FS.readTextFile UTF8 "test/Gruntfile.js"
+        Assert.equal "\n" file2Contents

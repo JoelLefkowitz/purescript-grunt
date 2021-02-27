@@ -2,6 +2,10 @@
 *.env
 *.tfstate
 *.tfstate.backup
+output/
+.spago/
+.psc-ide-port
+.psci_modules/
 terraform/.terraform/
 regisrty/media
 regisrty/registry/media

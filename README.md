@@ -1,6 +1,6 @@
 # Grunt preparser
 
-Purescript FFI bindings for Grunt
+PureScript FFI bindings for Grunt
 
 ## Status
 
@@ -8,6 +8,26 @@ Purescript FFI bindings for Grunt
 | ------- | -------------------------------------------------------------- |
 | Project | ![license][license] ![release][release]                        |
 | Raised  | [![issues][issues]][issues_link] [![pulls][pulls]][pulls_link] |
+
+## Usage
+
+* Grunt.Types mirrors the un-curried foreign types
+* Grunt.Methods allows purescript native way of configuring a gruntfile
+* Grunt.Gruntfile writes bindings to a gruntfile
+
+To build the main module:
+
+```bash
+spago bundle-module --to dist/Gruntfile.js
+```
+
+The gruntfile should contain this line:
+
+```js
+module.exports = require(\"dist/Gruntfile.js\").main
+```
+
+It is necessary to bundle as a module not an app so that we may have the gruntfile re-export the main method as the only export.
 
 ## Documentation
 
