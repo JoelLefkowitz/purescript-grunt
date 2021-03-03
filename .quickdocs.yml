@@ -1,0 +1,6 @@
+project: purescript-grunt
+version: 0.1.0
+author: Joel Lefkowitz
+verbose_name: PureScript grunt
+html_title: PureScript grunt
+github_url: JoelLefkowitz/purescript-grunt

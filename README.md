@@ -1,13 +1,21 @@
-# Grunt preparser
+# PureScript Grunt
 
 PureScript FFI bindings for Grunt
 
 ## Status
 
-| Source  | Shields                                                        |
-| ------- | -------------------------------------------------------------- |
-| Project | ![license][license] ![release][release]                        |
-| Raised  | [![issues][issues]][issues_link] [![pulls][pulls]][pulls_link] |
+| Source     | Shields                                                                                                            |
+| ---------- | ------------------------------------------------------------------------------------------------------------------ |
+| Project    | ![release][release_shield] ![license][license_shield] ![dependents][dependents_shield]                             |
+| Health     | ![travis][travis_shield] ![codacy][codacy_shield] ![coverage][coverage_shield] ![readthedocs][readthedocs_shield]  |
+| Repository | ![issues][issues_shield] ![pulls][pulls_shield]                                                                    |
+| Activity   | ![contributors][contributors_shield] ![monthly_commits][monthly_commits_shield] ![last_commit][last_commit_shield] |
+
+## Installation
+
+```bash
+git clone https://github.com/JoelLefkowitz/purescript-grunt
+```
 
 ## Usage
 
@@ -29,17 +37,63 @@ module.exports = require(\"dist/Gruntfile.js\").main
 
 It is necessary to bundle as a module not an app so that we may have the gruntfile re-export the main method as the only export.
 
+
+## Tests
+
+To run unit tests:
+
+```bash
+grunt tests:unit
+```
+
+To generate a coverage report:
+
+```bash
+grunt tests:coverage
+```
+
 ## Documentation
 
-Additional details are available in the [documentation][documentation]
+This repository's documentation is hosted on [readthedocs][readthedocs].
 
-## Changelog
+To generate the sphinx configuration:
 
-Please read [CHANGELOG.md](CHANGELOG.md) for details on changes that have been made.
+```bash
+grunt docs:generate
+```
+
+Then build the documentation:
+
+```bash
+grunt docs:build
+```
+
+## Tooling
+
+To run linters:
+
+```bash
+grunt lint
+```
+
+To run formatters:
+
+```bash
+grunt format
+```
+
+Before commiting new code:
+
+```bash
+grunt precommit
+```
+
+This will run linters, formaters, generate a test coverage report and the sphinx configuration.
 
 ## Versioning
 
-[SemVer][semver] is used for versioning. For a list of versions available, see the tags on this repository.
+This repository adheres to semantic versioning standards.
+For more inforamtion on semantic versioning visit [SemVer][semver].
 
 Bump2version is used to version and tag changes.
 For example:
@@ -48,32 +102,63 @@ For example:
 bump2version patch
 ```
 
-Releases are made on every minor change.
+## Changelog
 
-## Author
-
--   **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][author]
-
-See also the list of contributors who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Please read this repository's [CHANGELOG](CHANGELOG.md) for details on changes that have been made.
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests.
+Please read this repository's guidelines on [CONTRIBUTING](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## Acknowledgments
+## Contributors
 
-None yet!
+- **Joel Lefkowitz** - _Initial work_ - [Joel Lefkowitz][joellefkowitz]
 
-[license]: https://img.shields.io/github/license/joellefkowitz/purescript-grunt
-[release]: https://img.shields.io/github/v/tag/joellefkowitz/purescript-grunt
-[issues]: https://img.shields.io/github/issues/joellefkowitz/purescript-grunt "Issues"
-[issues_link]: https://github.com/JoelLefkowitz/purescript-grunt/issues
-[pulls]: https://img.shields.io/github/issues-pr/joellefkowitz/purescript-grunt "Pull requests"
-[pulls_link]: https://github.com/JoelLefkowitz/purescript-grunt/pulls
-[author]: https://github.com/JoelLefkowitz
+[![Buy Me A Coffee][coffee_button]][coffee]
+
+## Remarks
+
+Lots of love to the open source community!
+
+![Be kind][be_kind]
+
+<!-- Github links -->
+
+[pulls]: https://github.com/JoelLefkowitz/purescript-grunt/pulls
+[issues]: https://github.com/JoelLefkowitz/purescript-grunt/issues
+
+<!-- External links -->
+
+[readthedocs]: https://purescript-grunt.readthedocs.io/en/latest/
 [semver]: http://semver.org/
-[documentation]: https://purescript-grunt.readthedocs.io/en/latest/
+[coffee]: https://www.buymeacoffee.com/joellefkowitz
+[coffee_button]: https://cdn.buymeacoffee.com/buttons/default-blue.png
+[be_kind]: https://media.giphy.com/media/osAcIGTSyeovPq6Xph/giphy.gif
+
+<!-- Acknowledgments -->
+
+[joellefkowitz]: https://github.com/JoelLefkowitz
+
+<!-- Project shields -->
+
+[release_shield]: https://img.shields.io/github/v/tag/joellefkowitz/purescript-grunt
+[license_shield]: https://img.shields.io/github/license/joellefkowitz/purescript-grunt
+[dependents_shield]: https://img.shields.io/librariesio/dependent-repos/pypi/purescript-grunt
+
+<!-- Health shields -->
+
+[travis_shield]: https://img.shields.io/travis/joellefkowitz/purescript-grunt
+[codacy_shield]: https://img.shields.io/codacy/coverage/purescript-grunt
+[coverage_shield]: https://img.shields.io/codacy/grade/purescript-grunt
+[readthedocs_shield]: https://img.shields.io/readthedocs/purescript-grunt
+
+<!-- Repository shields -->
+
+[issues_shield]: https://img.shields.io/github/issues/joellefkowitz/purescript-grunt
+[pulls_shield]: https://img.shields.io/github/issues-pr/joellefkowitz/grunt-prepars
+
+<!-- Activity shields -->
+
+[contributors_shield]: https://img.shields.io/github/contributors/joellefkowitz/purescript-grunt
+[monthly_commits_shield]: https://img.shields.io/github/commit-activity/m/joellefkowitz/purescript-grunt
+[last_commit_shield]: https://img.shields.io/github/last-commit/joellefkowitz/purescript-grunt
