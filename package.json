@@ -1,7 +1,7 @@
 {
   "name": "purescript-grunt",
   "version": "0.1.0",
-  "description": "PureScript FFI bindings for Grunt",
+  "description": "PureScript FFI bindings for Grunt.",
   "license": "MIT",
   "author": "Joel Lefkowitz",
   "devDependencies": {
