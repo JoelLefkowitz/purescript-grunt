@@ -1,5 +1,14 @@
 { name = "purescript-grunt"
-, dependencies = [ "console", "effect", "psci-support", "arrays", "test-unit", "node-buffer",  "node-fs-aff" ]
+, dependencies =
+  [ "assert"
+  , "console"
+  , "debug"
+  , "effect"
+  , "ordered-collections"
+  , "psci-support"
+  , "strings"
+  , "stringutils"
+  ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs", "test/**/*.purs" ]
+, sources = [ "src/**/*.purs" ]
 }
