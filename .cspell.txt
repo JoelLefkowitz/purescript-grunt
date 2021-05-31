@@ -137,6 +137,8 @@ flowtype
 fmarkdown
 fnda
 foistware
+foldl
+forall
 fortnite
 foss
 frame
@@ -254,6 +256,7 @@ mdelete
 mdi
 mdir
 memoryless
+mempty
 mfa
 mget
 mircscript
@@ -280,6 +283,7 @@ nano
 narrator
 nedit
 negate
+newtype
 nextcloud
 ngsw
 nguniversal
@@ -342,13 +346,13 @@ prettierignore
 printshiv
 privmsg
 progid
-progid
 proglog
 psb
 psci
 psd
 pseudorandom
 psycopg
+purescript
 purs
 purty
 pushbullet
@@ -463,6 +467,7 @@ typeahead
 typehints
 unarchive
 unbundled
+uncurried
 undelete
 undoc
 unicode

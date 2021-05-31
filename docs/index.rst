@@ -1,7 +1,7 @@
-Purescript grunt
+PureScript grunt
 ============
 
-Welcome to Purescript grunt's documentation!
+Welcome to PureScript grunt's documentation!
 
 .. raw:: html
    :file: README.html

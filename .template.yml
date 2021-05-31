@@ -4,41 +4,41 @@ clear_top_level: true
 logical_grouping: true
 
 collections:
-  - common
-  - purescript
+    - common
+    - purescript
 
 loader_paths:
-  - docs
+    - docs
 
 render_context:
-  project:
-    project_name: purescript-grunt
-    version: 0.1.0
+    project:
+        project_name: purescript-grunt
+        version: 0.1.0
 
-    verbose_name: Purescript grunt
-    description: PureScript FFI bindings for Grunt.
+        verbose_name: PureScript grunt
+        description: PureScript FFI bindings for Grunt.
 
-    repository: https://github.com/JoelLefkowitz/grunt-preparser
-    codacy_id: 4934e15d76c04969af83eddea6ce5461
+        repository: https://github.com/JoelLefkowitz/purescript-grunt
+        codacy_id: 4856ff9fa3ee44b383549476deaaf921
 
-    inserts:
-      - usage.md
+        inserts:
+            - usage.md
 
-  author:
-    author: Joel Lefkowitz
-    author_email: joellefkowitz@hotmail.com
-    author_github_handle: joellefkowitz
+    author:
+        author: Joel Lefkowitz
+        author_email: joellefkowitz@hotmail.com
+        author_github_handle: joellefkowitz
 
-  package:
-    is_pursuit_package: true
-    package_name: purescript-grunt
+    package:
+        is_pursuit_package: true
+        package_name: grunt
 
-  portfolio:
-    is_portfolio: true
-    status_level: 2
+    portfolio:
+        is_portfolio: true
+        status_level: 2
 
-    languages:
-      - PureScript
+        languages:
+            - PureScript
 
-    paradigms:
-      - Functional programming
+        paradigms:
+            - Functional programming
